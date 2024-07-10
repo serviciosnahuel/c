@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi-CV</title>
+    <!--Link para usar iconos-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"
+      integrity="sha512-YcsIPGdhPK4P/uRW6/sruonlYj+Q7UHWeKfTAkBW+g83NKM+jMJFJ4iAPfSnVp7BKD4dKMHmVSvICUbE/V1sSw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="../script.js"></script>
+    <script src="../script2.js"></script>
+    <script src=".././prueba/script.js"></script>
+  </head>
+  <body>
+    <div>
+      <h1 class="jaja">
+        Crea tu Plan:
+      </h1>
+    </div>
+    
+    <!-- 
+ 
+
+
+
+
+
+
+  -->
+    <div class="formu">
+    
+      <!-- -------------------------------------------------------------------- -->
+      <strong class="c">Ingrese los Datos para completar su Plan:</strong>
+      <br/>
+      <!-- .......................... -->
+      <p class="inp"> Veiculo:</p>
+      <div class="inp">
+        <input placeholder="HILUX 70/30"  class="inpuy" type="text" name="palabra" id="veiculo" />
+        <br />
+        <button class="btn"  onclick="myFunctionVeiculo() ">listo</button>
+      </div>
+      <!-- ----------------------------------------------------------- -->
+      <p class="inp"> El plan seria por el:</p>
+      <div class="inp">
+        <input placeholder="Plan"  class="inpuy" type="text" name="palabra" id="nombreP" />
+        <br />
+        <button class="btn"  onclick="myFunctionN()">listo</button>
+      </div>
+      <!-- ....................... -->
+      <p class="inp"> Costo del plan actual:</p>
+      <div class="inp">
+        <input placeholder="Costo de plan"  class="inpuy" type="text" name="palabra" id="nombreP1" />
+        <br />
+        <button class="btn"  onclick="myFunctionMonto()">listo</button>
+      </div>
+        <!-- ....................... -->
+        <p class="inp"> Financiamiento por parte de la empresa:</p>
+        <div class="inp">
+          <input placeholder="Financiamiento"  class="inpuy" type="text" name="palabra" id="nombreP2" />
+          <br />
+          <button class="btn"  onclick=" myFunctionFinanciamos() ">listo</button>
+        </div>
+
+         <!-- ....................... -->
+         <p class="inp"> Cantidad de cuotas a financiar:</p>
+         <div class="inp">
+           <input placeholder="Cuotas"  class="inpuy" type="text" name="palabra" id="nombreP3" />
+           <br />
+           <button class="btn"  onclick="   myFunctionCuotas() ">listo</button>
+         </div>
+            <!-- ....................... -->
+            <p class="inp"> Cantidad de cuotas fijas:</p>
+            <div class="inp">
+              <input placeholder="Cuotas fijas"  class="inpuy" type="text" name="palabra" id="nombreP4" />
+              <br />
+              <button class="btn"  onclick="    myFunctionPrimeraCuota() ">listo</button>
+            </div>
+
+                  <!-- ....................... -->
+                  <p class="inp"> Adelantar cuotas a partir de la cuota N°:</p>
+                  <div class="inp">
+                    <input placeholder="Cuotas fijas"  class="inpuy" type="text" name="palabra" id="nombreP5" />
+                    <br />
+                    <button class="btn"  onclick="     myFunctionApartirDeLaCuota() ">listo</button>
+                  </div>
+
+                   <!-- ....................... -->
+                   <p class="inp"> Para Adjudicar el plan, se necesita integrar el porcentaje % de:</p>
+                   <div class="inp">
+                     <input placeholder="Cuotas fijas"  class="inpuy" type="text" name="palabra" id="nombreP6" />
+                     <br />
+                     <button class="btn"  onclick="      myFunctionIntegrar() ">listo</button>
+                   </div>
+
+                   <!-- ....................... -->
+                   <p class="inp"> Costo en $ pesos de integrar es de:</p>
+                   <div class="inp">
+                     <input placeholder="Cuotas fijas"  class="inpuy" type="text" name="palabra" id="nombreP7" />
+                     <br />
+                     <button class="btn"  onclick=" myFunctionCostoALaFecha() ">listo</button>
+                   </div>
+
+
+                   
+                    <!-- ....................... -->
+                    <h2 class="inp"> Esta parte modifica todo el Texto</h2>
+                    <p class="inp"> Modificar todo el TEXTO:</p>
+                    <div class="inp">
+                      
+                      <textarea placeholder="Escribe aquí tu descripción general" class="textarea" id="nombreP80" name="descripcionGeneral" rows="4" cols="50" style="width: 100%; padding: 10px; margin-bottom: 10px;"></textarea>
+                      <br />
+                      <button class="btn"  onclick=" myFunctionDescriptionGeneral() ">listo</button>
+                    </div>
+                     <!-- ....................... -->
+                     <h2 class="inp"> Esta parte modifica toda la parte de BONIFICACIONES</h2>
+                     <p class="inp"> Modificar todo el TEXTO:</p>
+                     <div class="inp">
+                       
+                       <textarea placeholder="Escribe aquí tu descripción general" class="textarea" id="nombreP90" name="descripcionGeneral" rows="4" cols="50" style="width: 100%; padding: 10px; margin-bottom: 10px;"></textarea>
+                       <br />
+                       <button class="btn"  onclick=" myFunctionDescriptionBonificaciones() ">listo</button>
+                     </div>
+                    
+                 
+ 
+ 
+                    <!-- -------------------------------- -->
+                   
+                   
+                
+
+
+                   <!-- -------------------------------- -->
+                  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- ---------------------------------------- -->
+
+      <!-- <div class="inp">
+        <input placeholder=" Tu Foto"  class="inpuy" type="text" name="palabra" id="imagen" />
+        <br />
+        <button class="btn"  onclick="myFunctionImag()">listo</button>
+      </div> -->
+      <p class="inp"> FOTO 1:</p>
+      <div class="inp">
+      <input class="inpuyIma"  type="file" id="file" accept="image/*"  onchange="mostrar()"/>
+      </div>
+      <!-- ...................... -->
+      <p class="inp"> FOTO 2:</p>
+      <div class="inp">
+      <input class="inpuyIma"  type="file" id="file2" accept="image/*"  onchange="mostrar2()"/>
+      </div>
+      <!-- .............. -->
+      <p class="inp"> FOTO 3:</p>
+      <div class="inp">
+      <input class="inpuyIma"  type="file" id="file3" accept="image/*"  onchange="mostrar3()"/>
+      </div>
+      <!-- <br>
+      <img id="img"/> --> 
+
+      </div>
+    </div>
+
+    
+  </div>
+    
+    
+    <!-- --------------------- -->
+    <br />
+    <div>
+      <div class="container" id="pdff">
+     
+
+        <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+        <div id="fon1" class="right_side">
+          <div class="avoid-break">
+
+          
+          <div class="containerLogoMARCEtoYOTA">
+            <img src="./Img/marcelo.png" alt="logo marcelo" class="marceloLog">
+            <img src="./Img/toyota.png" alt="logo marcelo" class="toyota">
+          </div>
+
+          <div class="about">
+            <u><h2 class="title2" id="colTEX" name="colTEX">HILUX 70/30</h2></u>
+            <br />
+            <!-- <p>
+              <b id="pe">
+                
+                El plan seria por el <b id="pex">HILUX DX 4x2 D/C</b>, que hoy tiene un costo de $<b id="pex2">33.501.000</b>, de los cuales desde Toyota te financiamos el <b id="pex3">70</b>% de la unidad en hasta <b id="pex4">96</b> cuotas, de las cuales las PRIMERAS <b id="pex5">12</b> SON FIJAS.
+                <br>
+                <br>
+                A partir de la cuota <b id="pex6">13</b>, primera que se actualiza por lista de precios, podes adelantar cuotas, de atrás hacia adelante, a valor puro, ahorrándote cargos administrativos e impuestos que se liquidan en la cuota mensual.
+                <br>
+                <br>
+                Para retirar la unidad, o por sorteo o por licitación, que son las formas de adjudicar por la modalidad plan, vas a tener que integrar el <b id="pex7">30</b>%, que a la fecha tiene un costo de $<b id="pex8">10.050.300</b>.
+                <br>
+                <br>
+                Una vez adjudicada la unidad, podes hacer cambio de modelo a cualquieras de las unidades habilitadas por la política de la marca, ya sea 4x2 o 4x4.
+              </b>
+            </p> -->
+            <p>
+              <b id="pe">
+                El plan seria por el <b style="text-transform: uppercase;" id="pex">HILUX DX 4x2 D/C</b>, que hoy tiene un costo de $<b id="pex2">33.501.000</b>, de los cuales desde Toyota te financiamos el <b id="pex3">70</b>% de la unidad en hasta <b id="pex4">96</b> cuotas, de las cuales las <span class="negrita">PRIMERAS <b id="pex5"><span class="negrita">12</span></b> SON FIJAS.</span>
+                <br>
+                <br>
+                A partir de la cuota <b id="pex6">13</b>, primera que se actualiza por lista de precios, podes adelantar cuotas, de atrás hacia adelante, a valor puro, ahorrándote cargos administrativos e impuestos que se liquidan en la cuota mensual.
+                <br>
+                <br>
+                Para retirar la unidad, o por sorteo o por licitación, que son las formas de adjudicar por la modalidad plan, vas a tener que integrar el <b id="pex7">30</b>%, que a la fecha tiene un costo de $<b id="pex8">10.050.300</b>.
+                <br>
+                <br>
+                Una vez adjudicada la unidad, podes hacer cambio de modelo a cualquieras de las unidades habilitadas por la política de la marca, ya sea 4x2 o 4x4.
+              </b>
+            </p>
+          </div>
+          <br>
+          <div class="profileText">
+            <div class="imgBx">
+       
+              <img id="img"/> 
+            </div>
+           
+          </div>
+        </div>
+        <br>
+        <br>
+        <div class="avoid-break">
+          <!-- ......... -->
+          <div class="profileText">
+            <div class="imgBx">
+       
+              <img id="img2"/> 
+            </div>
+           
+          </div>
+          <br>
+          <br>
+          <!-- ......... -->
+          <div class="profileText">
+            <div class="imgBx">
+       
+              <img id="img3"/> 
+            </div>
+           
+          </div>
+        </div>
+          <br>
+          <br>
+  <h1 style="font-size: 24px; color: #333; margin-bottom: 20px;">BONIFICACIONES</h1>
+  <ul id="peya">
+    <li style=" font-family: Arial, Helvetica, sans-serif; font-size: 20px; color: black; margin-bottom: 10px; margin-left: 40px;">CUOTA 1 BONIFICADA.</li>
+    <li style=" font-family: Arial, Helvetica, sans-serif; font-size: 20px; color: black; margin-bottom: 10px; margin-left: 40px;">CUOTA 7 BONIFICADA (SE REINTEGRARÁ A SU CUENTA BANCARIA UNA VEZ VERIFICADO EL PAGO DE LA MISMA EN EL SISTEMA).</li>
+    <li style=" font-family: Arial, Helvetica, sans-serif; font-size: 20px; color: black; margin-bottom: 10px; margin-left: 40px;">CUOTA 12 BONIFICADA (SE REINTEGRARÁ A SU CUENTA BANCARIA UNA VEZ VERIFICADO EL PAGO DE LA MISMA EN EL SISTEMA).</li>
+    <li style=" font-family: Arial, Helvetica, sans-serif; font-size: 20px; color: black; margin-bottom: 10px; margin-left: 40px; margin-left: 40px;">SERVICE DE 10.000 KM</li>
+    <li style=" font-family: Arial, Helvetica, sans-serif; font-size: 20px; color: black; margin-bottom: 10px; margin-left: 40px;">SERVICE DE 20.000 KM</li>
+    <li style=" font-family: Arial, Helvetica, sans-serif; font-size: 20px; color: black; margin-bottom: 10px; margin-left: 40px;">5% DE DESCUENTO SOBRE EL PRECIO DE LISTA DE LA UNIDAD AL MOMENTO DE RETIRAR</li>
+    <li style=" font-family: Arial, Helvetica, sans-serif; font-size: 20px; color: black; margin-bottom: 10px; margin-left: 40px;">COBERTOR DE CAJA O SU VALOR PARA ACCESORIOS</li>
+    <li style=" font-family: Arial, Helvetica, sans-serif; font-size: 20px; color: black; margin-bottom: 10px; margin-left: 40px;">POLARIZADO</li>
+  </ul>
+  <br>
+  <br>
+  <hr>
+  <br>
+  <br>
+  <div class="profileTextt">
+    <div class="imgBxx">
+
+      <img/> 
+    </div>
+   
+  </div>
+
+        </div>
+      </div>
+      <br />
+      <div class="cc">
+        <strong 
+          >Presiona el siguiente botón para crear un PDF:</strong
+        >
+        <button id="btnCrearPdf" class="btn2">Click aquí</button>
+      </div>
+    </div>
+  </body>
+</html>

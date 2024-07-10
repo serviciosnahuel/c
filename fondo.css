@@ -1,0 +1,132 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("./curriculum-vitae-master//Img/autooo.png");
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    background-size: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+  }
+
+.fot{
+  
+    padding: 0.5em 0;
+    text-align: center;
+    margin-top: auto;
+    margin-top: 100px ;
+  }
+
+  
+  .aa{
+  text-decoration: none;
+  }
+
+  .imagenMong{
+    width: 50px;
+    height: 50px;
+    margin-top: 30px;
+  }
+
+
+
+  .displ3 {
+    text-align: center; /* Centrar el contenedor del botón */
+    margin: 20px;
+}
+
+.dropdown-item3 {
+  display: inline-block;
+  background-color: #007bff; /* Color de fondo azul */
+  color: #fff; /* Color del texto blanco */
+  padding: 12px 20px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño de la fuente */
+  font-weight: bold; /* Negrita */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  text-align: center;
+  text-decoration: none; /* Sin subrayado */
+  border: none; /* Sin borde */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+}
+
+.dropdown-item3 a {
+  color: #fff; /* Color del texto blanco */
+  text-decoration: none; /* Sin subrayado */
+}
+
+.dropdown-item3:hover {
+  background-color: #0056b3; /* Color de fondo más oscuro al pasar el mouse */
+  transform: translateY(-2px); /* Efecto de levantamiento */
+}
+
+.dropdown-item3:active {
+  background-color: #004494; /* Color de fondo más oscuro al hacer clic */
+  transform: translateY(0); /* Restablece el efecto de levantamiento */
+}
+
+  
+@media (max-width: 600px) {
+  /*  .about .box {
+     flex-direction: column;
+   }
+   .about .box .year_company {
+     margin-bottom: 5px;
+   } */
+
+   
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: none;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: black;
+}
+
+.fot{
+
+  padding: 0.5em 0;
+  text-align: center;
+  margin-top: auto;
+  margin-top: 100px ;
+}
+
+
+.aa{
+text-decoration: none;
+}
+
+.imagenMong{
+  width: 50px;
+  height: 50px;
+  margin-top: 30px;
+}
+
+
+}
+.span22{
+  font-size: 24px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+           
+            border: 2px solid #ccc;
+            padding: 10px;
+            margin: 20px auto;
+            width: fit-content; /* Ajusta el ancho del contenedor al contenido */
+            border-radius: 8px; /* Bordes redondeados */
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+ 
+ 
+ 
+ 
+ 
