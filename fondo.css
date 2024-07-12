@@ -3,7 +3,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url("./curriculum-vitae-master//Img/autooo.png");
+    background-image: url("./curriculum-vitae-master//Img/ke.png");
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -115,10 +115,13 @@ text-decoration: none;
 .span22{
   font-size: 24px;
             font-weight: bold;
-            color: white;
+            
+            color: rgb(4, 0, 255);
+            font-size: 24;
             text-align: center;
+            
            
-            border: 2px solid #ccc;
+            border: 2px solid #1900ff;
             padding: 10px;
             margin: 20px auto;
             width: fit-content; /* Ajusta el ancho del contenedor al contenido */
