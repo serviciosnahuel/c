@@ -1,3 +1,12 @@
+function selectImage(imageSrc) {
+  document.getElementById('selectedImage').src = imageSrc;
+}
+
+
+
+
+
+
 function myFunctionVeiculo() {
   var veiculo = document.getElementById("veiculo").value;
   document.getElementById("colTEX").innerText = veiculo;

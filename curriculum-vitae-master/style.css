@@ -58,7 +58,7 @@ body {
 
 .profileText .imgBx {
   position: relative;
-  width: 500px;
+  width: 400px;
   height: 800px;
   overflow: hidden;
   /* margin: 0 auto; */
@@ -88,6 +88,8 @@ body {
   /* border-bottom: 1px solid rgba(255, 255, 255, 0.3); */
 }
 
+
+
 .profileTextt .imgBxx {
   position: relative;
   width: 800px;
@@ -109,6 +111,55 @@ body {
   height: 100%;
   object-fit: cover;
 }/* ------------------------------------------------------------------------------------------ */
+
+
+
+
+.profileTextPrecios{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.3); */
+}
+.profileTextPrecios .imgBxPrecios {
+  position: relative;
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
+  margin: 0 auto;
+  background-image: url('./Img/toyotaa.svg');
+  background-size: contain; /* Ajusta la imagen para cubrir completamente el contenedor */
+  background-position: center; /* Centra la imagen en el contenedor */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+/*centrado justo de la imagen en mi contenedor*/
+.profileTextPrecios .imgBxPrecios img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*centrado del nombre*/
 .profileText h2 {
   color: #fff;
