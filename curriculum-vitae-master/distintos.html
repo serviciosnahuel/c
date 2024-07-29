@@ -1,0 +1,174 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plan ideal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f4f4f9;
+      margin: 0; /* Elimina los márgenes del body */
+    }
+
+    .header {
+      background-color: #000000;
+      width: 100%;
+      padding: 20px 0; /* Añade padding en lugar de margen para el espacio interno */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      position: relative; /* Posición relativa para permitir el posicionamiento del enlace */
+    }
+
+    .admin-link {
+      position: absolute; /* Posiciona el enlace de manera absoluta dentro del header */
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%); /* Centra verticalmente el enlace */
+      color: red;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .admin-link:hover {
+      color: #ffffff; /* Cambia el color al pasar el mouse */
+    }
+
+    h1, h2, h3 {
+      margin: 10px 0;
+    }
+
+    .plan-container {
+      display: grid;
+      grid-template-columns: repeat(2, 300px);
+      gap: 20px;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .plan {
+      width: 300px;
+      height: 300px;
+      background-color: #ffffff;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .plan:hover {
+      background-color: #e1d8d8;
+      transform: scale(1.05);
+    }
+
+    .plan img {
+      width: 100%;
+      height: 70%;
+      object-fit: cover;
+      border-radius: 15px 15px 0 0;
+    }
+
+    .plan-button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #e74c3c;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .plan-button:hover {
+      background-color: #c0392b;
+    }
+
+    .info-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 50px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .info-item {
+      max-width: 600px;
+      text-align: center; /* Centra el texto */
+    }
+
+    .info-item img {
+      width: 600px;
+      height: 400px;
+      margin-top: 20px;
+    }
+
+    .info-item h3 {
+      color: #333;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .info-item p {
+      color: #666;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1 style="color: white;">Encontrá el Plan ideal en nuestro concesionario oficial</h1>
+    <h3 style="color: white;">Alcanzá tu Toyota con el plan más conveniente. Seleccioná tu modelo y recibí más información</h3>
+    <!-- Enlace a la página del administrador -->
+    <a href="./login.html" class="admin-link">|Inicio|</a>
+  </div>
+
+  <h2 style="margin-top: 40px;">Seleccione el plan deseado</h2>
+  <div class="plan-container">
+    <div class="plan" onclick="window.location.href = './hilux.html';">
+      <div style="background-image: url('../curriculum-vitae-master/Img/modelo-hilux.png'); background-size: cover; width: 100%; height: 70%; border-radius: 15px 15px 0 0;"></div>
+      <h2 style="color: black; font-size: 16px;">Hilux</h2>
+      <button class="plan-button">Consultar</button>
+    </div>
+    <div class="plan" onclick="window.location.href = './yaris.html';">
+      <div style="background-image: url('../curriculum-vitae-master/Img/modelo-yaris.png'); background-size: cover; width: 100%; height: 70%; border-radius: 15px 15px 0 0;"></div>
+      <h2 style="color: black; font-size: 16px;">Yaris</h2>
+      <button class="plan-button">Consultar</button>
+    </div>
+    <div class="plan" onclick="window.location.href = './corolla.html';">
+      <div style="background-image: url('../curriculum-vitae-master/Img/modelo-corolla.png'); background-size: cover; width: 100%; height: 70%; border-radius: 15px 15px 0 0;"></div>
+      <h2 style="color: black; font-size: 16px;">Corolla</h2>
+      <button class="plan-button">Consultar</button>
+    </div>
+    <div class="plan" onclick="window.location.href = './corollaCross.html';">
+      <div style="background-image: url('../curriculum-vitae-master/Img/modelo-corolla-cross.png'); background-size: cover; width: 100%; height: 70%; border-radius: 15px 15px 0 0;"></div>
+      <h2 style="color: black; font-size: 16px;">Corolla Cross</h2>
+      <button class="plan-button">Consultar</button>
+    </div>
+  </div>
+
+  <div class="info-section">
+    <div class="info-item">
+      <h3>Tu Toyota en cuotas</h3>
+      <p>¡Tenemos un Plan para vos! Recibí asesoramiento y accede al vehículo que deseas, en hasta 96 cuotas.</p>
+      <p>Scanea el qr y habla con un asesor comercial.</p>
+      <img src="../curriculum-vitae-master/Img/fefeee.png" alt="Car Icon" style="width: 600px; height: 400px;" >
+    </div>
+  </div>
+</body>
+</html>

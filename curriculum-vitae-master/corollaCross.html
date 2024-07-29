@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plan ideal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-color: #ffffff;
+      width: 100%;
+      padding: 20px 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2, h3 {
+      margin: 10px 0;
+    }
+
+    .plan-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      justify-content: center;
+      margin: 40px 20px;
+      padding: 0;
+    }
+
+    .plan {
+      background-color: #ffffff;
+      color: #333;
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      overflow: hidden;
+      text-align: left;
+    }
+
+    .plan:hover {
+      transform: scale(1.05);
+    }
+
+    .plan-content {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .plan h2 {
+      color: #e74c3c;
+      font-size: 20px;
+      margin: 0;
+    }
+
+    .plan p {
+      color: #666;
+      font-size: 16px;
+    }
+
+    .plan-button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #e74c3c;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .plan-button:hover {
+      background-color: #c0392b;
+    }
+
+    .info-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 50px 0;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .info-item {
+      max-width: 600px;
+      text-align: center;
+    }
+
+    .info-item img {
+      width: 600px;
+      height: 400px;
+      margin-top: 20px;
+    }
+
+    .info-item h3 {
+      color: #333;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .info-item p {
+      color: #666;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Encontrá el Plan ideal en nuestro concesionario oficial</h1>
+    <h3>Alcanzá tu Toyota con el plan más conveniente. Seleccioná tu modelo y recibí más información</h3>
+  </div>
+
+  <h2>Seleccione el plan deseado</h2>
+  <div class="plan-container">
+    <div class="plan" onclick="window.location.href = 'plan1.html';">
+      <div style="background-image: url('../curriculum-vitae-master/Img/modelo-corolla-cross.png'); background-size: contain; background-repeat: no-repeat; background-position: center; height: 200px; border-radius: 15px 15px 0 0;"></div>
+      <div class="plan-content">
+        <h2>PLAN COROLLA CROSS XEI HEV 100%</h2>
+        <p>Obtén el COROLLA CROSS XEI HEV con un plan de financiamiento del 100%.</p>
+        <button class="plan-button"><a href="path/to/documento.pdf" download="PlanHilux7030.pdf" class="plan-button">Descargar Info</a></button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="info-section">
+    <div class="info-item">
+      <h3>Tu Toyota en cuotas</h3>
+      <p>¡Tenemos un Plan para vos! Recibí asesoramiento y accede al vehículo que deseas, en hasta 96 cuotas.</p>
+      <p>Scanea el qr y un asesor comercial te contactará.</p>
+      <img src="../curriculum-vitae-master/Img/fede1.png" alt="QR Code">
+    </div>
+  </div>
+</body>
+</html>
