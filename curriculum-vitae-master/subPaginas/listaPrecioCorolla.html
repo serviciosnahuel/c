@@ -1,23 +1,85 @@
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imagen con Botón</title>
+    <title>Detalles</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .image-gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .image {
+            max-width: 80%;
+            height: auto;
+            margin: 10px 0;
+        }
+
+        .separator {
+            border: 0;
+            border-top: 2px solid #ccc;
+            width: 80%;
+            margin: 20px 0;
+        }
+
+        .button-group {
+            margin-top: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #007BFF; /* Color de fondo más profesional */
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .button:hover {
+            background-color: #0056b3; /* Color de fondo en hover */
+            transform: translateY(-2px);
+        }
+    </style>
 </head>
-<body style="text-align: center; font-family: Arial, sans-serif; padding: 20px;">
+<body>
+    <div class="container">
+        <!-- Imagen -->
+        <div class="image-gallery">
+            <img src="../../curriculum-vitae-master/Img/corollaAgosto.jpg" alt="Imagen de ejemplo" class="image">
 
-    <!-- Imagen -->
-    <div style="display: flex; flex-direction: column;">
-        <img src="../../curriculum-vitae-master/Img/corollaAgosto.jpg" alt="Imagen de ejemplo" style="max-width: 80%; height: auto; align-self: center;">
-        <div>-----------------------------------------------------------------</div>
-    <img src="../../curriculum-vitae-master/Img/corolla2.jpg" alt="Imagen de ejemplo" style="max-width: 80%; height: auto; align-self: center;">
+            <hr class="separator">
+            <img  src="../../curriculum-vitae-master/Img/corolla2.jpg" alt="Imagen de ejemplo" class="image">
+        </div>
+
+        <!-- Botones -->
+        <div class="button-group">
+            <a href="../pdf/Corolla 60-40.pdf" download="Corolla.pdf" class="button">Descargar plan completo</a>
+            <a href="../espec/1COROLLA.pdf" download="Corolla.pdf" class="button">Descargar especificaciones de vehículo</a>
+        </div>
     </div>
-
-    <!-- Botón -->
-    <!-- <div style="margin-top: 20px;">
-        <a href="ruta/a/tu/archivo.pdf" download="informacion_completa.pdf" style="display: inline-block; padding: 10px 20px; font-size: 16px; color: #fff; background-color: #007bff; text-decoration: none; border-radius: 5px;">Descargar información completa</a>
-    </div> -->
-
 </body>
 </html>
