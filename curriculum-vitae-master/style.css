@@ -4,8 +4,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Prompt", Georgia, Times, "Times New Roman", serif;
-  /* font-family: Arial, sans-serif; */
+  /* font-family: "Prompt", Georgia, Times, "Times New Roman", serif; */
+  font-family: Arial, sans-serif;
+  font-size: 22px;
  
   /* font-family: Arial, Helvetica, sans-serif; */
   color: #333
@@ -46,6 +47,68 @@ body {
   page-break-inside: avoid;
 }
 
+.profileText1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.profileText1 .imgBx1 {
+  position: relative;
+  width: 800px;
+  height: 1600px;
+  overflow: hidden;
+  /* margin: 0 auto; */
+  background-image: url('./Img/toyotaa.svg');
+  background-size: contain; /* Ajusta la imagen para cubrir completamente el contenedor */
+  background-position: center; /* Centra la imagen en el contenedor */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+/*centrado justo de la imagen en mi contenedor*/
+.profileText1 .imgBx1 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+/* ------ */
+
+.profileText2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.profileText2 .imgBx2 {
+  position: relative;
+  width: 400px;
+  height: 800px;
+  overflow: hidden;
+  /* margin: 0 auto; */
+  background-image: url('./Img/toyotaa.svg');
+  background-size: contain; /* Ajusta la imagen para cubrir completamente el contenedor */
+  background-position: center; /* Centra la imagen en el contenedor */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+/*centrado justo de la imagen en mi contenedor*/
+.profileText2 .imgBx2 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
 
 .profileText {
   position: relative;
@@ -59,7 +122,7 @@ body {
 .profileText .imgBx {
   position: relative;
   width: 400px;
-  height: 800px;
+  height: 600px;
   overflow: hidden;
   /* margin: 0 auto; */
   background-image: url('./Img/toyotaa.svg');
@@ -257,6 +320,8 @@ body {
 }
 .about {
   margin-bottom: 50px;
+  position: relative;
+
 }
 
 .about:last-child {
@@ -934,3 +999,18 @@ margin-top: 200px;
  }
  
  
+
+
+ /* Estilo para la marca de agua */
+.watermark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  font-size: 5em;
+  color: rgba(122, 116, 116, 0.071); /* Gris claro con 10% opacidad */
+  white-space: nowrap;
+  pointer-events: none; /* Para que no interfiera con los clics */
+  z-index: 1000; /* Asegura que esté por encima del contenido */
+  user-select: none; /* Previene la selección del texto */
+}

@@ -322,6 +322,16 @@ function myFunctionDescriptionBonificaciones() {
   const res = document.getElementById("im");
   res.src = letras;
 } */
+  function mostrar0() {
+    var archivo = document.getElementById("file0").files[0];
+    var reader = new FileReader();
+    if (file) {
+      reader.readAsDataURL(archivo);
+      reader.onloadend = function () {
+        document.getElementById("img00").src = reader.result;
+      };
+    }
+  }
 
 function mostrar() {
   var archivo = document.getElementById("file").files[0];

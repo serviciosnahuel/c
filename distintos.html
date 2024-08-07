@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plan ideal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f4f4f9;
+      margin: 0;
+    }
+
+    .header {
+      background-color: #000000;
+      width: 100%;
+      padding: 20px 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
+
+    .logo {
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      transform: translateY(-50%);
+      display: block;
+    }
+
+    .logo img {
+      height: 100px;
+    }
+
+    .admin-link {
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      color: red;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .admin-link:hover {
+      color: #ffffff;
+    }
+
+    h1, h2, h3 {
+      margin: 10px 0;
+    }
+
+    .plan-container {
+      display: grid;
+      grid-template-columns: repeat(3, 300px);
+      gap: 20px;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .plan {
+      width: 300px;
+      height: 300px;
+      background-color: #ffffff;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .plan:hover {
+      background-color: #e1d8d8;
+      transform: scale(1.05);
+    }
+
+    .plan img {
+      width: 100%;
+      height: 70%;
+      object-fit: cover;
+      border-radius: 15px 15px 0 0;
+    }
+
+    .plan-button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #e74c3c;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .plan-button:hover {
+      background-color: #c0392b;
+    }
+
+    .info-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 50px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .info-item {
+      max-width: 600px;
+      text-align: center;
+    }
+
+    .info-item img {
+      width: 600px;
+      height: 400px;
+      margin-top: 20px;
+    }
+
+    .info-item h3 {
+      color: #333;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .info-item p {
+      color: #666;
+      font-size: 16px;
+    }
+
+    /* Media Queries */
+    @media (max-width: 1024px) {
+      .plan-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .info-item img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .logo {
+        display: none; /* Oculta el logo en pantallas de hasta 768px */
+      }
+
+      .admin-link {
+        font-size: 14px;
+        right: 10px;
+      }
+
+      .plan-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        padding: 0 10px;
+      }
+
+      .plan-button {
+        font-size: 14px;
+      }
+
+      .info-item h3 {
+        font-size: 18px;
+      }
+
+      .info-item p {
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .admin-link {
+        font-size: 12px;
+        right: 5px;
+      }
+
+      .plan-button {
+        padding: 8px 16px;
+        font-size: 12px;
+      }
+
+      .info-item img {
+        width: 100%;
+        height: auto;
+      }
+
+      .info-item h3 {
+        font-size: 16px;
+      }
+
+      .info-item p {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <!-- Logo -->
+    <div class="logo">
+      <img src="../curriculum-vitae-master/Img/toyotaP.png" alt="Logo">
+    </div>
+
+    <h1 style="color: white;">Encontrá el Plan ideal en nuestro concesionario oficial</h1>
+    <h3 style="color: white;">Alcanzá tu Toyota con el plan más conveniente. Seleccioná tu modelo y recibí más información</h3>
+
+    <!-- Enlace a la página del administrador -->
+    <a href="./login.html" class="admin-link">|Inicio|</a>
+  </div>
+
+  <h2 style="margin-top: 40px;">Seleccione el plan TOYOTA deseado</h2>
+  <div class="plan-container">
+    <div class="plan" onclick="window.location.href = './hilux.html';">
+      <div style="background-image: url('../curriculum-vitae-master/Img/modelo-hilux.png'); background-size: cover; width: 100%; height: 70%; border-radius: 15px 15px 0 0;"></div>
+      <h2 style="color: black; font-size: 16px;">Hilux</h2>
+      <button class="plan-button">Consultar</button>
+    </div>
+    <div class="plan" onclick="window.location.href = './yaris.html';">
+      <div style="background-image: url('../curriculum-vitae-master/Img/modelo-yaris.png'); background-size: cover; width: 100%; height: 70%; border-radius: 15px 15px 0 0;"></div>
+      <h2 style="color: black; font-size: 16px;">Yaris</h2>
+      <button class="plan-button">Consultar</button>
+    </div>
+    <div class="plan" onclick="window.location.href = './corolla.html';">
+      <div style="background-image: url('../curriculum-vitae-master/Img/modelo-corolla.png'); background-size: cover; width: 100%; height: 70%; border-radius: 15px 15px 0 0;"></div>
+      <h2 style="color: black; font-size: 16px;">Corolla</h2>
+      <button class="plan-button">Consultar</button>
+    </div>
+    <div class="plan" onclick="window.location.href = './corollaCross.html';"> 
+      <div style="background-image: url('../curriculum-vitae-master/Img/modelo-corolla-cross.png'); background-size: cover; width: 100%; height: 70%; border-radius: 15px 15px 0 0;"></div>
+      <h2 style="color: black; font-size: 16px;">Corolla Cross</h2>
+      <button class="plan-button">Consultar</button>
+    </div>
+    <div class="plan" onclick="window.location.href = './hiace.html';">
+      <div style="background-image: url('../curriculum-vitae-master/Img/hiace-furgon.png'); background-size: cover; width: 100%; height: 70%; border-radius: 15px 15px 0 0;"></div>
+      <h2 style="color: black; font-size: 16px;">Hiace</h2>
+      <button class="plan-button">Consultar</button>
+    </div>
+    <div class="plan" onclick="window.location.href = './sw4.html';">
+      <div style="background-image: url('../curriculum-vitae-master/Img/sw4.png'); background-size: cover; width: 100%; height: 70%; border-radius: 15px 15px 0 0;"></div>
+      <h2 style="color: black; font-size: 16px;">SW4</h2>
+      <button class="plan-button">Consultar</button>
+    </div>
+  </div>
+
+  <div class="info-section">
+    <div class="info-item">
+      <h3>Tu Toyota en cuotas</h3>
+      <p>¡Tenemos un Plan para vos! Recibí asesoramiento y accede al vehículo que deseas, en hasta 96 cuotas.</p>
+      <p>Scanea el qr y habla con un asesor comercial.</p>
+      <img src="../curriculum-vitae-master/Img/fefeee.png" alt="Car Icon">
+    </div>
+  </div>
+</body>
+</html>
