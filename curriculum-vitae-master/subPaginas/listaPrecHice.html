@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -7,19 +7,42 @@
 </head>
 <body style="text-align: center; font-family: Arial, sans-serif; padding: 20px;">
 
-    <!-- Imagen -->
+
     <div style="display: flex; flex-direction: column;">
         <img src="../../curriculum-vitae-master/Img/hiaceAgosto.jpg" alt="Imagen de ejemplo" style="max-width: 80%; height: auto; align-self: center;">
     </div>
 
-    <!-- Botón -->
-    <!-- <div style="margin-top: 20px;">
-        <a href="ruta/a/tu/archivo.pdf" download="informacion_completa.pdf" style="display: inline-block; padding: 10px 20px; font-size: 16px; color: #fff; background-color: #007bff; text-decoration: none; border-radius: 5px;">Descargar información completa</a>
-    </div> -->
+
     <div class="button-group">
        
         <a href="../espec/1HIACE FURGON.pdf" download="Hiace_Furgon" class="button">Descargar especificaciones de vehículo</a>
     </div>
 
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mostrar PDF en HTML</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <iframe src="../espec/1HIACE FURGON.pdf"></iframe>
 </body>
 </html>

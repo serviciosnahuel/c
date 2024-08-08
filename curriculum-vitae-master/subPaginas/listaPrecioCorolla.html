@@ -1,4 +1,4 @@
-
+<!-- 
 
 
 
@@ -67,7 +67,7 @@
 </head>
 <body>
     <div class="container">
-        <!-- Imagen -->
+
         <div class="image-gallery">
             <img src="../../curriculum-vitae-master/Img/corollaAgosto.jpg" alt="Imagen de ejemplo" class="image">
 
@@ -75,11 +75,36 @@
             <img  src="../../curriculum-vitae-master/Img/corolla2.jpg" alt="Imagen de ejemplo" class="image">
         </div>
 
-        <!-- Botones -->
+
         <div class="button-group">
             <a href="../pdf/Corolla 60-40.pdf" download="Corolla" class="button">Descargar plan completo</a>
             <a href="../espec/1COROLLA.pdf" download="Corolla" class="button">Descargar especificaciones de vehículo</a>
         </div>
     </div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mostrar PDF en HTML</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <iframe src="../pdf/Corolla 60-40.pdf"></iframe>
 </body>
 </html>
