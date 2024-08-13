@@ -645,7 +645,7 @@ margin-top: 200px;
  
  
    body {
-     background: #000000;
+    background: #AAC9FF;
      display: block;
      justify-content: center;
      align-items: center;
@@ -658,7 +658,7 @@ margin-top: 200px;
      /*ocupa toda la pantalla */
      max-width: 1000px;
      min-height: 1000px;
-     background: rgb(0, 0, 0);
+     background: rgb(255, 255, 255);
      margin: 50px;
      /*esto me divide en dos*/
      display: grid;
