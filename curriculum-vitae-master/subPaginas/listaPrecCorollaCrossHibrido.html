@@ -1,117 +1,232 @@
-<!-- 
-
-
-
-
-
-
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalles</title>
-    <style>
-        /* General Styles */
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 20px;
-            background-color: #f4f4f4;
-            margin: 0;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .image-gallery {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .image {
-            max-width: 80%;
-            height: auto;
-            margin: 10px 0;
-        }
-
-        .separator {
-            border: 0;
-            border-top: 2px solid #ccc;
-            width: 80%;
-            margin: 20px 0;
-        }
-
-        .button-group {
-            margin-top: 20px;
-        }
-
-        .button {
-            display: inline-block;
-            padding: 15px 25px;
-            font-size: 18px;
-            color: #fff;
-            background-color: #007BFF; /* Color de fondo más profesional */
-            text-decoration: none;
-            border-radius: 5px;
-            margin: 10px;
-            transition: background-color 0.3s, transform 0.3s;
-        }
-
-        .button:hover {
-            background-color: #0056b3; /* Color de fondo en hover */
-            transform: translateY(-2px);
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-     
-        <div class="image-gallery">
-            <img src="../../curriculum-vitae-master/Img/corollacrosAgosto.jpg" alt="Imagen de ejemplo" class="image">
-
-            <hr class="separator">
-            <img  src="../../curriculum-vitae-master/Img/hibrido.jpg" alt="Imagen de ejemplo" class="image">
-        </div>
-
-        <div class="button-group">
-            <a href="../pdf/Corolla Cross Hibrido (3).pdf" download="Corolla-Cross-Hibr" class="button">Descargar plan completo</a>
-            <a href="../espec/1COROLLA CROSS.pdf" download="Corolla_Cross" class="button">Descargar especificaciones de vehículo</a>
-        </div>
-    </div>
-</body>
-</html> -->
-
-
-
-
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Mostrar PDF en HTML</title>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plan</title>
+  
+    <!--Link para usar iconos-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"
+      integrity="sha512-YcsIPGdhPK4P/uRW6/sruonlYj+Q7UHWeKfTAkBW+g83NKM+jMJFJ4iAPfSnVp7BKD4dKMHmVSvICUbE/V1sSw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="../../script.js"></script>
+    <script src="../../script2.js"></script>
+    <script src="../.././prueba/script.js"></script>
     <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-        }
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-    </style>
-</head>
-<body>
-    <iframe src="../pdf/Corolla Cross Hibrido (3).pdf"></iframe>
-</body>
-</html>
+      .image-selection {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+      }
+
+      .selectable-image {
+          width: 400px;
+          height: 300px;
+          cursor: pointer;
+          border: 2px solid transparent;
+          transition: border 0.3s ease;
+      }
+
+      .selectable-image:hover {
+          border: 2px solid #000;
+      }
+  </style>
+  </head>
+  <body>
  
+    <!-- --------------------- -->
+    <br />
+    <div>
+      <div class="container" id="pdff">
+     
+
+        <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+        <div id="fon1" class="right_side">
+          <div class="avoid-break">
+
+          
+          <div class="containerLogoMARCEtoYOTA">
+            <img src="../Img/marcelo.png" alt="logo marcelo" class="marceloLog">
+            <img src="../Img/toyotaP.png" alt="logo marcelo" class="toyota">
+          </div>
+
+          <div class="watermark">TOYOTA PLAN OFICIAL</div>
+          <div class="about">
+            <div class="watermark">TOYOTA PLAN OFICIAL</div>
+            <u><h2 class="title2" id="colTEX" name="colTEX">COROLLA CROSS 100% </h2></u>
+            <br />
+          
+            <p>
+              
+              <b id="pe">
+                El plan seria por el 
+                <b style="text-transform: uppercase;" id="pex">
+                    <span class="negrita">COROLLA CROSS XEI HEV ECVT</span> </b>,
+          que hoy tiene un costo de $<b id="pex2">39.809.000</b>,
+          de los cuales desde
+          <span style="color: white; background-color: red;">TOYOTA</span><span style="background-color: gray; color: white;">PLAN</span>
+        te financiamos el <b id="pex3">100</b>% de la unidad en hasta <b id="pex4">96</b> cuotas.
+
+<br>
+<br>
+Para retirar la unidad, ya sea por sorteo o por licitación, 
+que son actualmente las únicas formas disponibles según la 
+política comercial de <span style="color: white; background-color: red;">TOYOTA</span><span style="background-color: gray; color: white;">PLAN</span> para acceder a esta unidad.
+                <br>
+                <br>
+                Una vez adjudicada la unidad, podes hacer cambio de
+                modelo a cualquieras de las unidades habilitadas por
+                politicas comercial de la marca, de mayor o menor valor.
+                <br>
+                <br>
+                
+                <span style="color: white; background-color: red;">Información Adicional:</span> <span style="color: red;">Para acceder al plan, solo necesitas enviar una foto del frente y dorso de tu DNI, junto con tu dirección de correo electrónico, a tu asesor comercial a través de WhatsApp. Esto nos permitirá enviarte toda la información necesaria.
+                  <br>
+                  La primera cuota será bonificada, por lo que comenzarás a pagar a partir de la segunda cuota, que se abonará aproximadamente 45 días después de tu incorporación al plan. Además, si te adhieres con tarjeta de débito, podrás disfrutar de beneficios exclusivos. Para coordinar estos detalles y conocer los beneficios disponibles, consulta con tu asesor comercial, <span style="font-family: 'Courier New', Courier, monospace; color: red;">Marcelo Alejandro Giménez</span>.</span>
+              </b>
+            </p>
+          </div>
+          
+          <div class="profileText">
+            <div class="imgBx">
+       
+              <img src="../screen/ibrido.png" alt="image"/> 
+            </div>
+           
+          </div>
+        </div>
+        <br>
+
+        <div class="avoid-break">
+      
+          <div class="profileText1">
+            <div class="imgBx1">
+       
+              <img src="../Img/hibrido.jpg"/> 
+            </div>
+           
+          </div>
+        </div>
+        
+        <br>
+        <div class="avoid-break">
+          <!-- ......... -->
+          
+          <div class="profileText2">
+            <div class="imgBx2">
+       
+                <img src="../Img/corollacrosAgosto.jpg"/> 
+            </div>
+           
+          </div>
+          <br>
+          <br>
+          
+          <!-- ......... -->
+          <div class="profileTextPrecios">
+            
+            <div class="imgBxPrecios">
+       
+                <img src="../Img/ImageListaPrecios/hibrido.png"/> 
+            </div>
+           
+          </div>
+        </div>
+
+        <br>
+       
+   <div class="avoid-break">
+    <!-- <div class="profileTextPrecios">
+      <div class="imgBxPrecios">
+          <img src="./" /> 
+      </div>
+  </div> -->
+
+<br>
+<br>
+<h1 style="font-size: 24px; color: #333; margin-bottom: 20px;">BONIFICACIONES</h1>
+
+<ul id="peya">
+<li style=" font-family: Arial, Helvetica, sans-serif; font-size: 20px; color: black; margin-bottom: 10px; margin-left: 40px;">CUOTA 1 BONIFICADA.</li>
+<li style=" font-family: Arial, Helvetica, sans-serif; font-size: 20px; color: black; margin-bottom: 10px; margin-left: 40px;">CUOTA 7 BONIFICADA (SE REINTEGRARÁ A SU CUENTA BANCARIA UNA VEZ VERIFICADO EL PAGO DE LA MISMA EN EL SISTEMA).</li>
+<li style=" font-family: Arial, Helvetica, sans-serif; font-size: 20px; color: black; margin-bottom: 10px; margin-left: 40px; margin-left: 40px;">SERVICE DE 10.000 KM REALIZADO EN NUESTRO TALLER OFICIAL. </li>
+<li style=" font-family: Arial, Helvetica, sans-serif; font-size: 20px; color: black; margin-bottom: 10px; margin-left: 40px;">SERVICE DE 20.000 KM REALIZADO EN NUESTRO TALLER OFICIAL.</li>
+<li style=" font-family: Arial, Helvetica, sans-serif; font-size: 20px; color: black; margin-bottom: 10px; margin-left: 40px;">COBERTOR DE CAJA O SU VALOR PARA ACCESORIOS.</li>
+<li style=" font-family: Arial, Helvetica, sans-serif; font-size: 20px; color: black; margin-bottom: 10px; margin-left: 40px;">POLARIZADO.</li>
+<li style=" font-family: Arial, Helvetica, sans-serif; font-size: 20px; color: black; margin-bottom: 10px; margin-left: 40px;"><span class="negrita">En caso de participar en una licitación con un auto usado, ofrecemos un servicio llave por llave para que no te quedes sin vehículo durante el proceso.</span></li>
+
+</ul>
+   </div>       
+                      
+  <br>
+
+  <div class="avoid-break"  style="font-family: Arial, sans-serif; font-size: 12px;">
+    <p style="font-weight: bold;">* Conceptos adicionales que componen la cuota:</p>
+    <p style="margin-left: 20px;">
+        - Seguro de vida (sólo para personas físicas): se calculará a partir la emisión de la cuota Nº2 para todos los planes. En planes 100% será del 0,07% sobre el saldo de cuotas puras a vencer. En planes financiados sera del 0,07% sobre el saldo de cuotas puras a vencer + cuota extraordinaria.
+    </p>
+    <br>
+    <table style="width: 100%; border-collapse: collapse;">
+        <tr style="background-color: #d3d3d3;">
+            <td style="border: 1px solid black; padding: 5px;">Integracion Mínima planes 84 meses: 24 cuotas puras</td>
+            <td style="border: 1px solid black; padding: 5px;">Integracion Mínima planes 96 meses: 36 cuotas puras</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    
+    <p style="font-weight: bold;">Notas:</p>
+    <ul style="margin-left: 20px; position: relative;">
+      <div class="watermark">PLAN TOYOTA OFICIAL</div>
+        <li>Comercialización de planes sujeto a cupos informados por representante comercial</li>
+        <li>Precio Público (valor movil) con IVA incluido.</li>
+        <li>Derecho de Adhesión y Permanencia: 3%+IVA del valor movil.
+            <ul style="margin-left: 20px;">
+                <li>Los planes de Cuota Fija: 0,125% +IVA desde la cuota Nº1 a la cuota Nº24 inclusive.</li>
+                <li>En el resto de los planes: 0,4%+IVA en cuota 1, y 2,6%+IVA prorrateado en 23 cuotas a partir de la cuota Nº2</li>
+            </ul>
+        </li>
+        <li>Gastos Administrativos: 10%+IVA sobre el valor de cuota pura.</li>
+        <li>Derecho de Adjudicación: 1%+IVA del valor movil al momento de la aceptación de la adjudicación.</li>
+        <li>Impuesto sobre los Débitos y Créditos bancarios: se calculara aplicando el 0,804% sobre el valor de la Cuota pura + Seguro de vida (estimado) + Impuesto de sellos (estimado)</li>
+        <li>Impuesto de sellos para Planes con Plazo de 84 meses: (tributo provincial de Bs As) de base de calculo: prorrateado en 4 cuotas a partir de la cuota Nº2. a modo de ejemplo se muestra el impuesto determinado para la provincia de buenos aires</li>
+        <li>Impuesto de sellos para Planes con Plazo de 96 meses - Cuota Variable: (tributo provincial de Bs As) de base de calculo: prorrateado en 17 cuotas a partir de la cuota Nº2. a modo de ejemplo se muestra el impuesto determinado para la provincia de buenos aires</li>
+        <li>Impuesto de sellos para Planes con Plazo de 96 meses - Cuota Fija: (tributo provincial de Bs As) de base de calculo: prorrateado en 11 cuotas a partir de la cuota Nº2. a modo de ejemplo se muestra el impuesto determinado para la provincia de buenos aires</li>
+    </ul>
+</div>
+<br>
+  <br>
+  <br>
+  <br>
+  <div class="avoid-break">
+    <div class="profileTextt">
+      <div class="imgBxx">
+  
+        <img/> 
+      </div>
+  </div>
+  </div>
+
+        </div>
+      </div>
+      <br />
+      <div class="cc">
+        <strong 
+          >Presiona el siguiente botón para crear un PDF:</strong
+        >
+        <button id="btnCrearPdf" class="btn2">Click aquí</button>
+      </div>
+    </div>
+  </body>
+</html>
