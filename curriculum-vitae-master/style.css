@@ -608,28 +608,7 @@ margin-top: 200px;
   
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* --------------------------------------------- */
 
 
 @media (max-width: 600px) {
@@ -645,7 +624,7 @@ margin-top: 200px;
  
  
    body {
-    background: #AAC9FF;
+     /* background: #000000; */
      display: block;
      justify-content: center;
      align-items: center;
@@ -656,9 +635,9 @@ margin-top: 200px;
      position: relative;
      width: 100%;
      /*ocupa toda la pantalla */
-     max-width: 1000px;
-     min-height: 1000px;
-     background: rgb(255, 255, 255);
+     max-width: 100%;
+     min-height: 100%;
+     /* background: rgb(0, 0, 0); */
      margin: 50px;
      /*esto me divide en dos*/
      display: grid;
@@ -669,13 +648,7 @@ margin-top: 200px;
      
    }
    
-   .container .left_side {
-     position: relative;
-     /* background: rgb(30, 70, 30); */
-     background: #000000;
-     padding: 40px;
-     border-radius: 5px 0px 0px 5px;
-   }
+  
    .profileText {
      position: relative;
      display: flex;
@@ -779,7 +752,7 @@ margin-top: 200px;
      position: relative;
      width: 100%;
      height: 6px;
-     background: rgb(0, 0, 0);
+     /* background: rgb(0, 0, 0); */
      display: block;
      margin-top: 5px;
    }
@@ -795,7 +768,7 @@ margin-top: 200px;
    /*@@@@@@@@@@@@@@@@@@@@@@@@@@*/
    .right_side {
      position: relative;
-     background: rgb(0, 0, 0);
+     /* background: rgb(0, 0, 0); */
      padding: 40px;
      border: solid 1px rgb(0, 0, 0);
      border-radius: 0px 5px 5px 0px;
@@ -918,7 +891,7 @@ margin-top: 200px;
    .formu2{
      width: 0px;
      height: 0px;
-     background-color: #000000;
+     /* background-color: #000000; */
      display: grid;
      grid-template-columns: repeat(1, 1fr);
      margin: auto;
@@ -957,7 +930,7 @@ margin-top: 200px;
      height: 0px;
    
      padding: 0px;
-     background-color: #000000;
+     /* background-color: #000000; */
      border-radius: 0px;
      margin: auto;
      color: rgb(0, 0, 0);
@@ -970,7 +943,7 @@ margin-top: 200px;
      height: 0px;
    
      padding: 0px;
-     background-color: #000000;
+     /* background-color: #000000; */
      border-radius: 0px;
      margin: auto;
      color: rgb(0, 0, 0);
@@ -985,7 +958,7 @@ margin-top: 200px;
    .dropdown-item{
     width: 200px;
     height: 200px;
-    background-color: #000000;
+    /* background-color: #000000; */
     border: none;
     border-radius: 5px;
     color: #000000;
@@ -997,6 +970,59 @@ margin-top: 200px;
    
   }
  }
+
+
+
+
+
+ /* ----------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
  
 
